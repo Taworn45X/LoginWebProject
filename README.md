@@ -1,29 +1,48 @@
-# LoginWebProject — Modern Responsive Auth Web UI
+# LoginWebProject — Full-Stack Auth Web UI & Express Backend
 
-หน้าเว็บระบบยืนยันตัวตน (Authentication UI) และแดชบอร์ดผู้ใช้ พัฒนาด้วย HTML5, Vanilla CSS Design System และ JavaScript ปรับแต่งรูปโฉมด้วย Glassmorphic Dark / Light Mode
+ระบบยืนยันตัวตน (Authentication System) และแดชบอร์ดผู้ใช้แบบ Full-Stack พัฒนาด้วย Node.js, Express.js Backend API ควบคู่กับ HTML5, Clean Vanilla CSS Design System และ Client-side JavaScript
 
 ---
 
 ## จุดเด่นของโปรเจกต์ (Features)
-- **Modern Responsive Design:** รองรับการแสดงผลทุกขนาดหน้าจอ (Desktop, Tablet, Mobile)
-- **Dark / Light Theme Toggle:** รองรับการสลับธีมสีพร้อมบันทึกค่าลง `localStorage`
-- **Form Client-side Validation:** ระบบตรวจสอบความถูกต้องของข้อมูล (Email, Password validation) ด้วย Vanilla JS
-- **Single Page Application (SPA) State Switching:** สลับหน้าจอระหว่าง Login, Register และ User Dashboard ได้ลื่นไหล
+- **Express.js RESTful API Backend:** บริการ API ยืนยันตัวตน (`/api/auth/login`, `/api/auth/register`) พร้อมโครงสร้างแบบ Modular (Routes & Middleware)
+- **Modern Responsive Web UI:** หน้าจอปรับตามขนาดอุปกรณ์ (Desktop, Tablet, Mobile) ด้วย Clean CSS System
+- **Dark / Light Theme Switcher:** รองรับการสลับธีมสีพร้อมบันทึกค่าลง `localStorage`
+- **Client-side Form Validation:** ตรวจสอบความถูกต้องของข้อมูลก่อนส่งไปยัง API
 
 ---
 
-## โครงสร้างโปรเจกต์
+## โครงสร้างโปรเจกต์ (Project Structure)
 ```text
 LoginWebProject/
-├── index.html       # โครงสร้างหน้าเว็บ Semantic HTML5
+├── server.js        # Entry point สำหรับ Express.js Node.js Server
+├── routes/
+│   └── auth.js      # REST API Routes สำหรับ Login และ Register
+├── index.html       # โครงสร้างหน้าเว็บ SPA (Single Page Application)
 ├── css/
-│   └── styles.css   # Clean CSS Architecture & Theme Tokens
-└── js/
-    └── app.js       # Client-side Logic, Theme Switcher & Form Validation
+│   └── styles.css   # Modern Clean CSS System & Theme Tokens
+├── js/
+│   └── app.js       # Client-side Logic & API Call Handling
+└── package.json     # Node.js Dependencies & Scripts
 ```
 
 ---
 
-## วิธีการทดสอบรัน
+## วิธีการติดตั้งและรันใช้งาน
 
-เปิดไฟล์ `index.html` บนเว็บเบราว์เซอร์ใดก็ได้ (Chrome, Edge, Safari, Firefox) หรือรันผ่าน Live Server Extension ใน VS Code
+1. **ติดตั้ง Dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **รันเซิร์ฟเวอร์:**
+   ```bash
+   npm start
+   ```
+   หรือรันโหมดพัฒนาด้วย Nodemon:
+   ```bash
+   npm run dev
+   ```
+
+3. **เข้าใช้งาน:**
+   เปิดเบราว์เซอร์ไปที่ `http://localhost:3000`

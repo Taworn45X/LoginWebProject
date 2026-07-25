@@ -1,10 +1,10 @@
-# 🔑 LoginWebProject — Modern Responsive Auth Web UI
+# LoginWebProject — Modern Responsive Auth Web UI
 
 หน้าเว็บระบบยืนยันตัวตน (Authentication UI) และแดชบอร์ดผู้ใช้ พัฒนาด้วย HTML5, Vanilla CSS Design System และ JavaScript ปรับแต่งรูปโฉมด้วย Glassmorphic Dark / Light Mode
 
 ---
 
-## ✨ จุดเด่นของโปรเจกต์ (Features)
+## จุดเด่นของโปรเจกต์ (Features)
 - **Modern Responsive Design:** รองรับการแสดงผลทุกขนาดหน้าจอ (Desktop, Tablet, Mobile)
 - **Dark / Light Theme Toggle:** รองรับการสลับธีมสีพร้อมบันทึกค่าลง `localStorage`
 - **Form Client-side Validation:** ระบบตรวจสอบความถูกต้องของข้อมูล (Email, Password validation) ด้วย Vanilla JS
@@ -12,7 +12,7 @@
 
 ---
 
-## 📂 โครงสร้างโปรเจกต์
+## โครงสร้างโปรเจกต์
 ```text
 LoginWebProject/
 ├── index.html       # โครงสร้างหน้าเว็บ Semantic HTML5
@@ -24,6 +24,6 @@ LoginWebProject/
 
 ---
 
-## 🚀 วิธีการทดสอบรัน
+## วิธีการทดสอบรัน
 
 เปิดไฟล์ `index.html` บนเว็บเบราว์เซอร์ใดก็ได้ (Chrome, Edge, Safari, Firefox) หรือรันผ่าน Live Server Extension ใน VS Code
